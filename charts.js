@@ -138,29 +138,6 @@ function buildCharts(sample) {
 
     // D2: 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble",bubbleData, bubbleLayout)
-    
-    // 4. Create the trace for the gauge chart.
-  //   var gaugeData = [{
-  //     domain:{x: [0, 1], y: [0, 1] },
-  //     value: washing,
-  //     type: "indicator",
-  //     mode: "gauge + number",
-  //     //gauge: {
-  //       //axis: { range: [null, 10], tickwidth: 1, tickcolor: "darkblue" }//,
-  //    // title: { text: "Belly Button Washing Frequency", font: { size: 24 } },
-  // //  }
-  // }
-     
-  //   ];
-    
-  //   // 5. Create the layout for the gauge chart.
-  //   var gaugeLayout = { 
-  //     width: 500,
-  //     height: 400,
-  //     margin: { t: 25, r: 25, l: 25, b: 25 }//,
-  //     //paper_bgcolor: "lavender",
-  //     //font: { color: "darkblue", family: "Arial" }
-  //   };
 
   var gaugeData = [
     {
@@ -189,3 +166,8 @@ function buildCharts(sample) {
     Plotly.newPlot("gauge",gaugeData,gaugeLayout)
   });
 }
+
+
+    
+
+    
